@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - FashionStore</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/red.png" alt="store logo" width="85px"></a>
+                <img src="images/"" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/icon.png" width="30px" height="30px" ></a>
+        </div>
+    </div>
+
+    <!-- --------- cart items details -------- -->
+
+            <div class="small-container cart-page">
+
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/prod-02 (12).jpg">
+                                <div>
+                                    <p>Solid White Shoes by CAMPUS</p>
+                                    <small>price: $37.99</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$37.99</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/offer.png">
+                                <div>
+                                    <p>Smart watch by Boat</p>
+                                    <small>price: $60.99</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$60.99</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/lat 1 (2).jpg">
+                                <div>
+                                    <p>T-shirt by ROADSTER</p>
+                                    <small>price: $42.99</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$42.99</td>
+                    </tr>
+                </table>
+
+                <div class="total-price">
+                   <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$141.97</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$22.85</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$164.82</td>
+                    </tr>
+                   </table>
+                </div>
+
+            </div>
+
+<!-- -------footer------ -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile Phones</p>
+                    <div class="app-logo">
+                        <img src="images/all.png">
+                        <img src="images/plau.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/red.png" alt="">
+                    <p>Download App for Android and ios mobile Phones</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usuful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Usuful Links</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyrights">All 2024 Copyrights are Resrved</p>
+        </div>
+    </div>
+
+<!-- ----------js for toggle menu----------- -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
